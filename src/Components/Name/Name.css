@@ -1,7 +1,15 @@
-.nameComponent img{
+.orangeName{
     position: relative;
     z-index: 0;
     width:90vw;
     padding-bottom: 1vh;
-    margin-left: -3vw;
+    right: 3vw;
+}
+
+.blackName{
+    position: relative;
+    z-index: 0;
+    width:90vw;
+    padding-bottom: 1vh;
+    right: 6vw;
 }

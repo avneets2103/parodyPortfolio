@@ -1,30 +1,27 @@
-# React + TypeScript + Vite
+### Presenting Our Brand New Innovation:
+# `DEVELOPER A` 
+### `The first H.I. powered code assistant`
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Our innovative `Human Intelligence` is on its path to change the view of development, with actual human errors and coffee breaks, not replacable by any Artificial Intelligence.
 
-Currently, two official plugins are available:
+### This is:
+![Alt text](image.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<br>
+<br>
 
-## Expanding the ESLint configuration
+# On a serious note:
+### This is a parody portfolio, where I `Avneet Singh` also called `Developer A` is the product to be sold. 
+### I have tried my best to sprinkle some humour to the aspect of portfolios, with some hidden jokes and comedy, So dont take it very seriously and with a grain of salt.
+![Alt text](image-3.png)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<br>
+<br>
 
-- Configure the top-level `parserOptions` property like this:
+# Tech used:
+### I have used React library, along side some other easuly available libararies for frontend.
+### Also Typescript is used to avoid making `Human` errors and I also used a lot of `Chat GPT` for help (Ironic, I know!).
+### Deployed on vercel for now, with non custom domain.
+![Alt text](image-4.png)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+<hr>

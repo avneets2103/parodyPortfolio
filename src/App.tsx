@@ -15,20 +15,20 @@ function App() {
         <LScreen1 />
       </div>
       <div className="UpperSlide">
-        <div className="UScreen1">
+        <div className="Uscreen UScreen1">
           <UScreen1 />
         </div>
-        <div className="UScreen2">
+        <div className="Uscreen UScreen2">
           <UScreen2 />
         </div>
-        <div className="UScreen4" id="educationID">
+        <div className="Uscreen UScreen4" id="educationID">
           <LScreen2/>
           <UScreen4College/>
         </div>
-        <div className="UScreen5" id="projectID">
+        <div className="Uscreen UScreen5" id="projectID">
           <UScreen5/>
         </div>
-        <div className="UScreen6" id="skillsID">
+        <div className="Uscreen UScreen6" id="skillsID">
           <UScreen6/>
         </div>
         <div className="LowerSlide2">

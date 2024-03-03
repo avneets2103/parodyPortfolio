@@ -20,6 +20,10 @@
   gap: 0;
 }
 
+.UScreen{
+  position: relative;
+}
+
 .UScreen2{
   background-color: var(--orange);
 }

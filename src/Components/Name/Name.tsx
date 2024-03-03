@@ -9,9 +9,9 @@ function Name(props: Props) {
     return (
         <div className='nameComponent'>
             {colorMode=="black"?
-            <img src="/icons/nameOrange.png" alt="arrow"/>
+            <img  className="orangeName" src="/icons/nameOrange.png" alt="arrow"/>
             :
-            <img src="/icons/name.png" alt="arrow"/>
+            <img className="blackName" src="/icons/name.png" alt="arrow"/>
             }
         </div>
     )
