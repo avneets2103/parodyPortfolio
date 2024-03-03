@@ -19,7 +19,7 @@
 <br>
 
 # Tech used:
-### I have used React library, along side some other easuly available libararies for frontend.
+### I have used React library, along side some other easily available libararies for frontend.
 ### Also Typescript is used to avoid making `Human` errors and I also used a lot of `Chat GPT` for help (Ironic, I know!).
 ### Deployed on vercel for now, with non custom domain.
 ![Alt text](image-4.png)
