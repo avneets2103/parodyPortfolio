@@ -1,0 +1,46 @@
+.Allfeatures{
+    background-color: var(--orange);
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.featureHeading{
+    font-size: 4vh;
+}
+
+.scrollFeatures{
+    padding: 0 4vw;
+    width: 90vw;
+    height: 50vh;
+}
+
+.skillCard{
+    padding: 1rem;
+    width: 25vw;
+    height: 40vh;
+}
+
+.innerSkillCard{
+    width: 90%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #f0f0f080, #90909000);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between; 
+    padding: 2rem 0;   
+}
+
+.skillCard img{
+    width: 60%;
+    max-height: 30%;
+}
+
+.innerSkillCard p{
+    max-width: 80%;
+}

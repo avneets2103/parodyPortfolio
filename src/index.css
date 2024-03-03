@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Michroma';
+    src: url('/fonts/Michroma-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+	--orange: #FF4301;
+    --black: #1E1E1E;
+    --white: #FFF5F1;
+}
+
+.michromaLight{
+    font-family: "Michroma", sans-serif;
+    font-weight: 300;
+}
+
+.michromaNormal{
+    font-family: "Michroma", sans-serif;
+    font-weight: 500;
+}
+
+.michromaBold{
+    font-family: "Michroma", sans-serif;
+    font-weight: 700;
+}
+
+.michromaBoldest{
+    font-family: "Michroma", sans-serif;
+    font-weight: 900;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Michroma", sans-serif;
+}
+
+html{
+    background-color: #FFF5F1;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.scrollLock{
+    overflow: hidden;
+}

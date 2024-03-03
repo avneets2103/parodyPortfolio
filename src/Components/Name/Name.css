@@ -1,0 +1,7 @@
+.nameComponent img{
+    position: relative;
+    z-index: 0;
+    width:90vw;
+    padding-bottom: 1vh;
+    margin-left: -3vw;
+}

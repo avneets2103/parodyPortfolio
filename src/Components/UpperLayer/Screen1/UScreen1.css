@@ -1,0 +1,62 @@
+.upperS1{
+    position: relative;
+    background-color: var(--white);
+    opacity: 100%;
+    margin-top: 100vh;
+    width: 92vw;
+    height: 92h;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.upperS1upperText{
+    display: flex;
+    flex-direction: column;
+    font-size: 5vh;
+    font-weight: 800;
+}
+
+.upperS1upperText span{
+    color: var(--orange);
+}
+
+.upperS1lower{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.upperS1lower img{
+    z-index: 2;
+    position: relative;
+    min-width: 200px;
+    width: 25vw;
+}
+
+.upperS1lower img:hover {
+    content: url("/icons/ProductFeaturesH.png");
+}
+
+.upperS1lower:last-child span{
+    color: var(--orange);
+}
+
+.sticker {
+    opacity: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    font-weight: 600;
+    position: absolute;
+    padding: 1rem;
+    border-radius: 3rem;
+    min-width: 20vw;
+    font-size: 25px;
+    color: var(--white);
+    border: 1px solid white;
+}

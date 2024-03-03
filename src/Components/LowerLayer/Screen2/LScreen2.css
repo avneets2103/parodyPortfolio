@@ -1,0 +1,70 @@
+.LScreen2Wrapper{
+    position: sticky;
+    top:0;
+}
+
+.LScreen2{
+    display: flex;
+    height: 90vh;
+    width: 100vw;
+}
+
+.education{
+    flex: 1;
+    width: 40vw;
+    background-color: var(--white);
+    padding: 5vh 5vw;
+    font-size: 4vh;
+    font-weight: 600;
+}
+
+.school{
+    flex: 1;
+    width: 40vw;
+    background-color: var(--black);
+    padding: 10vh 5vw;
+}
+
+.leftSpec{
+    display: flex;
+    justify-content: flex-start;
+    color: var(--white);
+}
+
+.BTech{
+    color: var(--orange);
+    font-size: 4.5vh;
+    font-weight: 700;
+}
+
+.CS{
+    font-size: 3vh;
+    font-weight: 500;
+}
+
+.NSUT{
+    font-size: 3vh;
+    font-weight: 500;
+}
+
+.GPA{
+    font-size: 6vh;
+    font-weight: 800;
+}
+
+.rightSpec{
+    display: flex;
+    justify-content: flex-end;
+    color: var(--white);
+}
+
+.specs{
+    width: 100vw;
+    background-color: var(--orange);
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 4vh;
+}

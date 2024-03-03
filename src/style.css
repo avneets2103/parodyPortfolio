@@ -1,0 +1,30 @@
+.SlidesContainer {
+  position: relative;
+}
+
+.LowerSlide {
+  z-index: 0;
+  position: sticky;
+  top: 0;
+}
+
+.LowerSlide2{
+  z-index: -1;
+  position: sticky;
+  bottom: 0;
+}
+
+.UpperSlide {
+  position: relative;
+  z-index: 1;
+  gap: 0;
+}
+
+.UScreen2{
+  background-color: var(--orange);
+}
+
+.UScreen6{
+  position: sticky;
+  top: 0;
+}

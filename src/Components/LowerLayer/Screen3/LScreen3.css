@@ -1,0 +1,25 @@
+.Endscreen{
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: var(--black);
+}
+
+.nameScreen1{
+    margin-left: 3vw;
+}
+
+.endLinks{
+    display: flex;
+    padding: 0.5rem 3rem;
+    gap: 1rem;
+}
+
+.endLinks a{
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

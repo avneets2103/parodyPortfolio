@@ -1,0 +1,42 @@
+.college{
+    width: 40vw;
+    background-color: var(--orange);
+    padding: 5vh 5vw;
+    height: 81vh;
+    margin-left: 50vw;
+    z-index: 2;
+    position: relative;
+}
+
+.leftSpecC{
+    display: flex;
+    justify-content: flex-start;
+    color: var(--white);
+}
+
+.BTechC{
+    color: var(--black);
+    font-size: 4.5vh;
+    font-weight: 700;
+}
+
+.CSC{
+    font-size: 3vh;
+    font-weight: 500;
+}
+
+.NSUTC{
+    font-size: 3vh;
+    font-weight: 500;
+}
+
+.GPAC{
+    font-size: 6vh;
+    font-weight: 800;
+}
+
+.rightSpecC{
+    display: flex;
+    justify-content: flex-end;
+    color: var(--white);
+}

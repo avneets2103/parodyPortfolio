@@ -1,0 +1,42 @@
+.lowerS1{
+    padding: 3vw;
+    padding-bottom: 0;
+    background-color: var(--orange);
+    height: 94vh;
+    width: 94vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.screen1Top{
+    align-items: center;
+    margin-right: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.screen1LinkBox{
+    display: flex;
+    gap:1rem;
+}
+
+.screen1LinkBox a{
+    display: flex;
+    gap: 10px;
+    margin: 5px 0;
+}
+
+.screen1LinkBoxIn{
+    width: 20vw;
+}
+
+.screen1LinkBoxIn hr{
+    border: 0.5px var(--black) solid;
+}
+
+.screen1LinkBoxIn hr:first-child{
+    border: 2px var(--black) solid;
+}
+
