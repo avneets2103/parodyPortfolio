@@ -10,9 +10,9 @@ import useWindowDimensions from "./Components/windowDim/windowDim";
 import "./style.css";
 
 function App() {
-  const { width } = useWindowDimensions();
+  const { width, height } = useWindowDimensions();
   // phone size
-  if(width<576){
+  if(width<height){
     return (
       <div className="SlidesContainer" >
         <div className="LowerSlide">

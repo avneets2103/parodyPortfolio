@@ -1,10 +1,11 @@
 import Name from "../../Name/Name";
 import './LScreen3.css'
 import useWindowDimensions from "../../windowDim/windowDim";
+import { mobileTreshold } from "../../../CONSTANTS";
 
 export default function LScreen3() {
-    const { width } = useWindowDimensions();
-    if (width < 576) {
+    const { width, height } = useWindowDimensions();
+    if (width < height) {
       return (
         <div className="Endscreen">
             <div className="nameScreen1">

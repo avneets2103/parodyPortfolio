@@ -1,9 +1,10 @@
 import "./UScreen4.css";
 import useWindowDimensions from "../../windowDim/windowDim";
+import { mobileTreshold, tabletTreshold } from "../../../CONSTANTS";
 
 function UScreen4College() {
-  const { width } = useWindowDimensions();
-  if (width < 576) {
+  const { width, height } = useWindowDimensions();
+  if (width < height) {
     return (
       <div className="collegeP">
         <div className="innerSpec">

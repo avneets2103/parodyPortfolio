@@ -1,10 +1,11 @@
 import "./LScreen1.css";
 import Name from "../../Name/Name";
 import useWindowDimensions from "../../windowDim/windowDim";
+import { mobileTreshold, tabletTreshold } from "../../../CONSTANTS";
 
 function LScreen1() {
-  const { width } = useWindowDimensions();
-  if (width < 576) {
+  const { width, height } = useWindowDimensions();
+  if (width < height) {
     return (
       <div className="lowerS1P">
         <div className="screen1TopP">

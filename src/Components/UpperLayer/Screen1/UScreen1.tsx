@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./UScreen1.css";
 import useWindowDimensions from "../../windowDim/windowDim";
+import { mobileTreshold } from "../../../CONSTANTS";
 
 const featureList = [
   "It codes",
@@ -28,7 +29,7 @@ interface sticker {
 }
 
 function UScreen1() {
-  const { width } = useWindowDimensions();
+  const { width, height } = useWindowDimensions();
   const [stickers, setStickers] = useState<sticker[]>([]);
   function featureShow() {
     let top = Math.random() * (window.innerHeight - 200);

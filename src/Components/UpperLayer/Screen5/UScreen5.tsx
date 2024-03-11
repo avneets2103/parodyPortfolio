@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './UScreen5.css'
 import useWindowDimensions from "../../windowDim/windowDim";
+import { mobileTreshold, tabletTreshold } from '../../../CONSTANTS';
 
 interface project {
     Pid: string,
@@ -58,8 +59,8 @@ const projectList:Array<project> = [
 
 function UScreen5() {
     const [currProject, setCurrProject] = useState(projectList[0]);
-    const { width } = useWindowDimensions();
-    if (width < 576) {
+    const { width, height } = useWindowDimensions();
+    if (width < height) {
       return (
         <div className='ProjectsP'>
             <div className='ProjectsWardrobeP'>

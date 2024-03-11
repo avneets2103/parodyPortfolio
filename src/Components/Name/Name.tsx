@@ -6,8 +6,8 @@ interface Props {
 
 function Name(props: Props) {
   const { colorMode } = props;
-  const { width } = useWindowDimensions();
-  if (width < 576) {
+  const { width, height } = useWindowDimensions();
+  if (width < height) {
     return (
       <div className="nameComponent">
         {colorMode == "black" ? (
