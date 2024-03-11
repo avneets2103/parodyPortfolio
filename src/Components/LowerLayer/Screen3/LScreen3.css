@@ -17,7 +17,24 @@
     gap: 1rem;
 }
 
+.endLinksP{
+    display: flex;
+    /* padding: 0.5rem 3rem; */
+    gap: 1rem;
+}
+
+.endLinks p{
+    text-wrap: nowrap;
+}
+
 .endLinks a{
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.endLinksP a{
     color: var(--white);
     display: flex;
     align-items: center;

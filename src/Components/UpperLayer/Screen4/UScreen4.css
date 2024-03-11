@@ -6,6 +6,21 @@
     margin-left: 50vw;
     z-index: 2;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.collegeP{
+    width: 90vw;
+    background-color: var(--white);
+    padding: 5vh 5vw;
+    height: 81vh;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .leftSpecC{
@@ -14,8 +29,20 @@
     color: var(--white);
 }
 
+.leftSpecCP{
+    display: flex;
+    justify-content: flex-start;
+    color: var(--black);
+}
+
 .BTechC{
     color: var(--black);
+    font-size: 4.5vh;
+    font-weight: 700;
+}
+
+.BTechCP{
+    color: var(--orange);
     font-size: 4.5vh;
     font-weight: 700;
 }
@@ -39,4 +66,10 @@
     display: flex;
     justify-content: flex-end;
     color: var(--white);
+}
+
+.rightSpecCP{
+    display: flex;
+    justify-content: flex-end;
+    color: var(--black);
 }

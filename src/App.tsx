@@ -6,9 +6,40 @@ import UScreen2 from "./Components/UpperLayer/Screen2/UScreen2";
 import UScreen4College from "./Components/UpperLayer/Screen4/UScreen4School";
 import UScreen5 from "./Components/UpperLayer/Screen5/UScreen5";
 import UScreen6 from "./Components/UpperLayer/Screen6/UScreen6";
+import useWindowDimensions from "./Components/windowDim/windowDim";
 import "./style.css";
 
 function App() {
+  const { width } = useWindowDimensions();
+  // phone size
+  if(width<576){
+    return (
+      <div className="SlidesContainer" >
+        <div className="LowerSlide">
+          <LScreen1 />
+        </div>
+        <div className="UpperSlide">
+          <div className="Uscreen UScreen1">
+            <UScreen1 />
+          </div>
+          <div className="Uscreen UScreen2">
+            <UScreen2 />
+          </div>
+          <div className="Uscreen UScreen4" id="educationID">
+            <LScreen2/>
+            <UScreen4College/>
+          </div>
+          <div className="Uscreen UScreen5" id="projectID">
+            <UScreen5/>
+          </div>
+          <div className="LowerSlide2">
+            <LScreen3 />
+          </div>
+        </div>
+      </div>
+    );
+  }
+  // full size
   return (
     <div className="SlidesContainer" >
       <div className="LowerSlide">

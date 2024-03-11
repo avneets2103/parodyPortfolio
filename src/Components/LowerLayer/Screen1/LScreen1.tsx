@@ -1,7 +1,27 @@
 import "./LScreen1.css";
 import Name from "../../Name/Name";
+import useWindowDimensions from "../../windowDim/windowDim";
 
 function LScreen1() {
+  const { width } = useWindowDimensions();
+  if (width < 576) {
+    return (
+      <div className="lowerS1P">
+        <div className="screen1TopP">
+          <img
+            src="/icons/Logo.png"
+            alt="logo"
+            width={80}
+            height={80}
+            className="mainLogo"
+          />
+        </div>
+        <div className="nameScreen1">
+          <Name colorMode="orange" />
+        </div>
+      </div>
+    );
+  }
   return (
     <div className="lowerS1">
       <div className="screen1Top">
@@ -25,10 +45,7 @@ function LScreen1() {
               />
             </a>
             <hr />
-            <a
-              href="https://www.linkedin.com/in/avneets2103/"
-              target="blank"
-            >
+            <a href="https://www.linkedin.com/in/avneets2103/" target="blank">
               <p>linkedin</p>
               <img
                 src="/icons/up-right.png"

@@ -9,12 +9,29 @@
     justify-content: space-between;
 }
 
+.lowerS1P{
+    padding: 0 3vw;
+    background-color: var(--orange);
+    height: 100vh;
+    width: 94vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 
 .screen1Top{
     align-items: center;
     margin-right: 5rem;
     display: flex;
     justify-content: space-between;
+}
+
+.screen1TopP{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .screen1LinkBox{

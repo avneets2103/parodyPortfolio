@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './UScreen5.css'
+import useWindowDimensions from "../../windowDim/windowDim";
 
 interface project {
     Pid: string,
@@ -57,6 +58,56 @@ const projectList:Array<project> = [
 
 function UScreen5() {
     const [currProject, setCurrProject] = useState(projectList[0]);
+    const { width } = useWindowDimensions();
+    if (width < 576) {
+      return (
+        <div className='ProjectsP'>
+            <div className='ProjectsWardrobeP'>
+                <div className="leftWardrobeP">
+                    <div className="wardrobeTitle">
+                        <p className='projectTitle'>PROJECT WARDROBE:</p>
+                        <div>
+                            <p>our product <span>`Developer avneet`</span></p>
+                            <p>has been tested</p>
+                            <p>to make these projects:</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="projectsListP">
+                    <div className="innerProjectList">
+                        {projectList.map((project: project) => (
+                            <div className={currProject===project?"project selectedProject":"project"} key={project.Pid} onClick={()=>{
+                                setCurrProject(project);
+                            }}>
+                                {project.Pname}
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+            <div className='ProjectShowcaseP'>
+                <div className="visualShowcaseP">
+                    <img src={currProject.imgSrc} alt="projectImg" width="200px"/>
+                </div>
+                <div className="descriptionShowcase">
+                    {/* <div className="titleShowcase">
+                        {currProject.Pname}
+                    </div> */}
+                    <div className="descriptionShowcase">
+                        {currProject.description}
+                    </div>
+                    <div className="techShowcase">
+                        {currProject.techDescription}
+                    </div>
+                    <div className="linkShowcase">
+                        {currProject.isActive && (<p>Active Link: <a href={currProject.activeLink} target='_blank'>Click here!</a></p>)}
+                        <p>Github Link: <a href={currProject.githubLink} target='_blank'>Click here!</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      )}
+  
     return (
         <div className='Projects'>
             <div className='ProjectsWardrobe'>
