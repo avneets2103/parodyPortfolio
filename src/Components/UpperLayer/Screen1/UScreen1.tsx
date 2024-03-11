@@ -29,7 +29,7 @@ interface sticker {
 }
 
 function UScreen1() {
-  const { width, height } = useWindowDimensions();
+  const { width} = useWindowDimensions();
   const [stickers, setStickers] = useState<sticker[]>([]);
   function featureShow() {
     let top = Math.random() * (window.innerHeight - 200);
@@ -59,7 +59,7 @@ function UScreen1() {
     currentIndex = (currentIndex + 1) % featureList.length;
     setStickers([...stickers, newSticker]);
   }
-  if (width < 576) {
+  if (width < mobileTreshold) {
     return (
       <div className="upperS1P">
         <div className="upperS1upperTextP">

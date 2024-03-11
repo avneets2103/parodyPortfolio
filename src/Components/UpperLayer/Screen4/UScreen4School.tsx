@@ -1,6 +1,5 @@
 import "./UScreen4.css";
 import useWindowDimensions from "../../windowDim/windowDim";
-import { mobileTreshold, tabletTreshold } from "../../../CONSTANTS";
 
 function UScreen4College() {
   const { width, height } = useWindowDimensions();

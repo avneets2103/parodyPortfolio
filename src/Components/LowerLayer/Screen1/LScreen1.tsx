@@ -1,7 +1,6 @@
 import "./LScreen1.css";
 import Name from "../../Name/Name";
 import useWindowDimensions from "../../windowDim/windowDim";
-import { mobileTreshold, tabletTreshold } from "../../../CONSTANTS";
 
 function LScreen1() {
   const { width, height } = useWindowDimensions();
