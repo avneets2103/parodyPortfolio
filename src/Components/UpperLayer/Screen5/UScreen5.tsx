@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import './UScreen5.css'
 import useWindowDimensions from "../../windowDim/windowDim";
-import { mobileTreshold, tabletTreshold } from '../../../CONSTANTS';
 
 interface project {
     Pid: string,
