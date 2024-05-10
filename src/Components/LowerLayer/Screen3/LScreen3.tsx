@@ -29,7 +29,7 @@ export default function LScreen3() {
                     height={10}
                 />
                 </a>
-                <a href="https://drive.google.com/file/d/1xRMhLV0Nu6336UBwHtFIpIoGg9O8dJ1o/view?usp=sharing" target="_blank">
+                <a href="https://drive.google.com/file/d/1j9XQ1kP9dm3Vwa12Aee0twwwnPvfXhju/view?usp=sharing" target="_blank">
                     <p>Resume</p>
                     <img
                     src="/icons/up-right2.png"
@@ -66,7 +66,7 @@ export default function LScreen3() {
                     height={10}
                 />
                 </a>
-                <a href="https://drive.google.com/file/d/1xRMhLV0Nu6336UBwHtFIpIoGg9O8dJ1o/view?usp=sharing" target="_blank">
+                <a href="https://drive.google.com/file/d/1j9XQ1kP9dm3Vwa12Aee0twwwnPvfXhju/view?usp=sharing" target="_blank">
                     <p>Resume</p>
                     <img
                     src="/icons/up-right2.png"
