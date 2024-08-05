@@ -5,8 +5,16 @@
     font-style: normal;
 }
 
+/* 
+    orange: #FF4301
+    teal: #179BAE
+    yellow: #F9E400
+    green: #88D66C
+    mustard: #FFB22C
+*/
+
 :root{
-	--orange: #FF4301;
+	--orange: #179BAE;
     --black: #1E1E1E;
     --white: #FFF5F1;
 }

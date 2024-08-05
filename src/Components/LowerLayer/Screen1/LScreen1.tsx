@@ -17,7 +17,7 @@ function LScreen1() {
           />
         </div>
         <div className="nameScreen1">
-          <Name colorMode="orange" />
+          <Name colorMode="orange" colorIndex={0}/>
         </div>
       </div>
     );
@@ -57,8 +57,8 @@ function LScreen1() {
           </div>
           <div className="screen1LinkBoxIn screen1LinkBoxRight">
             <hr />
-            <a href="#educationID">
-              <p>education</p>
+            <a href="https://drive.google.com/file/d/1TeGSOs_GMwu_MzndoYRht1g-xa3ph_3G/view?usp=sharing" target="blank">
+              <p>resume</p>
               <img
                 src="/icons/up-right.png"
                 alt="arrow"
@@ -67,8 +67,8 @@ function LScreen1() {
               />
             </a>
             <hr />
-            <a href="#projectID">
-              <p>project</p>
+            <a href="https://leetcode.com/avneets2103/" target="blank">
+              <p>leetcode</p>
               <img
                 src="/icons/up-right.png"
                 alt="arrow"
@@ -80,7 +80,7 @@ function LScreen1() {
         </div>
       </div>
       <div className="nameScreen1">
-        <Name colorMode="orange" />
+        <Name colorMode="orange" colorIndex={0}/>
       </div>
     </div>
   );

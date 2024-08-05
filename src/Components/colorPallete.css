@@ -1,0 +1,53 @@
+.colorpallete {
+    z-index: 10;
+    position: fixed;
+    top: 2rem;
+    right: 1rem;
+    background-color: var(--black);
+    padding: 5px;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    height: 2rem; /* default height */
+}
+
+.fullh {
+    height: 14rem; /* expanded height */
+}
+
+.colorPalleteButton {
+    background-color: var(--orange);
+    border-radius: 50%;
+    border-width: 2px;
+    padding: 5px;
+    width: 2rem;
+    height: 2rem;
+    border-color: white;
+}
+
+.selectedColor {
+    border-color: black;
+}
+
+.mainColorButton {
+    background-color: transparent;
+    border-width: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.colors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.showColors {
+    opacity: 1;
+}

@@ -71,9 +71,9 @@
     width: 25vw;
 }
 
-.upperS1lower img:hover {
+/* .upperS1lower img:hover {
     content: url("/icons/ProductFeaturesH.png");
-}
+} */
 
 .upperS1lower:last-child span{
     color: var(--orange);

@@ -10,10 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@radix-ui/react-hover-card": "^1.1.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.3.21",
+    "qss": "^3.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scroll-horizontal": "^1.6.6",
-    "react-scroll-trigger": "^0.6.14"
+    "react-scroll-trigger": "^0.6.14",
+    "tailwind-merge": "^2.4.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.56",
@@ -26,5 +31,9 @@
     "eslint-plugin-react-refresh": "^0.4.5",
     "typescript": "^5.2.2",
     "vite": "^5.1.4"
-  }
+  },
+  "description": "### Our innovative `Human Intelligence` is on its path to change the view of development, with actual human errors and coffee breaks, not replacable by any Artificial Intelligence.",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
 }

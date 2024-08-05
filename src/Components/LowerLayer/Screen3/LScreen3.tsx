@@ -2,13 +2,18 @@ import Name from "../../Name/Name";
 import './LScreen3.css'
 import useWindowDimensions from "../../windowDim/windowDim";
 
-export default function LScreen3() {
+interface Props {
+  colorIndex: number;
+}
+
+export default function LScreen3(props: Props) {
+    const { colorIndex } = props;
     const { width, height } = useWindowDimensions();
     if (width < height) {
       return (
         <div className="Endscreen">
             <div className="nameScreen1">
-                <Name colorMode="black" />
+                <Name colorMode="black" colorIndex={colorIndex} />
             </div>
             <div className="endLinksP">
                 <a href="https://github.com/avneets2103/parodyPortfolio" target="_blank">
@@ -29,7 +34,7 @@ export default function LScreen3() {
                     height={10}
                 />
                 </a>
-                <a href="https://drive.google.com/drive/folders/16nEpaNP30jC5JkF0p9cYkYKYOC0g5Y4L?usp=sharing" target="_blank">
+                <a href="https://drive.google.com/file/d/1TeGSOs_GMwu_MzndoYRht1g-xa3ph_3G/view?usp=sharing" target="_blank">
                     <p>Resume</p>
                     <img
                     src="/icons/up-right2.png"
@@ -45,7 +50,7 @@ export default function LScreen3() {
     return (
         <div className="Endscreen">
             <div className="nameScreen1">
-                <Name colorMode="black" />
+                <Name colorMode="black" colorIndex={colorIndex} />
             </div>
             <div className="endLinks">
                 <a href="https://github.com/avneets2103/parodyPortfolio" target="_blank">

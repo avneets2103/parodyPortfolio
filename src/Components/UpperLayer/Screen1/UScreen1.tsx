@@ -14,7 +14,6 @@ const featureList = [
 ];
 
 let currentIndex = 0;
-
 interface sticker {
   message: string;
   top: number;
@@ -28,7 +27,13 @@ interface sticker {
   b2: string;
 }
 
-function UScreen1() {
+interface Props {
+  colorIndex: number;
+}
+
+function UScreen1(props: Props) {
+  const { colorIndex } = props;
+  const [isHovered, setIsHovered] = useState(false);
   const { width} = useWindowDimensions();
   const [stickers, setStickers] = useState<sticker[]>([]);
   function featureShow() {
@@ -94,8 +99,15 @@ function UScreen1() {
             your <span>404</span> and <span>LIFE</span> errors.
           </p>
         </div>
-        <div onClick={featureShow}>
-          <img src="/icons/ProductFeaturesN.png" alt="features" />
+        <div
+          onClick={featureShow}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
+          <img
+            src={isHovered ? `../icons/ProductFeatures${colorIndex}.png` : "../icons/ProductFeaturesN.png"}
+            alt="features"
+          />
         </div>
         {stickers.map((sticker) => (
           <div

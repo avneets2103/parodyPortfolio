@@ -1,0 +1,84 @@
+.college{
+    width: 40vw;
+    background-color: var(--orange);
+    padding: 5vh 5vw;
+    height: 90vh;
+    margin-left: 50vw;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mlzero{
+    margin-left: 0;
+}
+
+.collegeP{
+    width: 90vw;
+    background-color: var(--white);
+    padding: 5vh 5vw;
+    height: 90vh;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.innerSpec{
+    width: 100%;
+    height: 100%;
+}
+
+.leftSpecC{
+    display: flex;
+    justify-content: flex-start;
+    color: var(--white);
+}
+
+.leftSpecCP{
+    display: flex;
+    justify-content: flex-start;
+    color: var(--black);
+}
+
+.BTechC{
+    color: var(--black);
+    font-size: 4.5vh;
+    font-weight: 700;
+}
+
+.BTechCP{
+    color: var(--orange);
+    font-size: 4.5vh;
+    font-weight: 700;
+}
+
+.CSC{
+    font-size: 3vh;
+    font-weight: 500;
+}
+
+.NSUTC{
+    font-size: 3vh;
+    font-weight: 500;
+}
+
+.GPAC{
+    font-size: 6vh;
+    font-weight: 800;
+}
+
+.rightSpecC{
+    display: flex;
+    justify-content: flex-end;
+    color: var(--white);
+}
+
+.rightSpecCP{
+    display: flex;
+    justify-content: flex-end;
+    color: var(--black);
+}

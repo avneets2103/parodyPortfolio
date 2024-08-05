@@ -1,4 +1,5 @@
 .Allfeatures{
+    padding-top: 5px;
     background-color: var(--orange);
     width: 100vw;
     height: 60vh;
@@ -19,8 +20,8 @@
 
 .skillCard{
     padding: 1rem;
-    width: 25vw;
-    height: 40vh;
+    width: 20vw;
+    height: 30vh;
 }
 
 .innerSkillCard{
