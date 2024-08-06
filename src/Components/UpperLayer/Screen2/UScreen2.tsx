@@ -1,11 +1,21 @@
+import { useEffect } from 'react';
 import './UScreen2.css'
 
-function UScreen2() {
+interface Props {
+  visible: boolean;
+}
+
+function UScreen2(props: Props) {
+  const { visible } = props;
   return (
     <>
-      <video autoPlay={true} loop muted className="productVideoComp" controls={false} preload="auto">
-        <source src="/interstellar.mp4" type="video/mp4" />
-      </video>
+      {
+        visible && <>
+          <video autoPlay={true} id="interstellarVid" muted loop className="productVideoComp" controls={false} preload="auto">
+            <source src="/interstellar.mp4" type="video/mp4" />
+          </video>
+        </>
+      }
     </>
   );
 }
