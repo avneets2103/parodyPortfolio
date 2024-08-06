@@ -11,15 +11,19 @@ import UScreen5 from "./Components/UpperLayer/Screen5/UScreen5";
 import UScreen6 from "./Components/UpperLayer/Screen6/UScreen6";
 import useWindowDimensions from "./Components/windowDim/windowDim";
 import { useState } from "react";
+import { useRef } from "react";
+import useScrollSnap from "react-use-scroll-snap";
 import "./style.css";
 
 function App() {
   const { width, height } = useWindowDimensions();
   const [primaryColor, setPrimaryColor] = useState<number>(0);
+  const scrollRef = useRef(null);
+  useScrollSnap({ ref: scrollRef, duration: 0, isDirectionEnabled: false});
   // phone size
   if(width<height){
     return (
-      <div className="SlidesContainer" >
+      <div className="SlidesContainer" ref={scrollRef}>
         <div className="LowerSlide">
           <LScreen1 />
         </div>
@@ -46,12 +50,12 @@ function App() {
   }
   // full size
   return (
-    <div className="SlidesContainer" >
+    <div className="SlidesContainer">
       <ColorPalette colorIndex={primaryColor} setColorIndex={setPrimaryColor} />
       <div className="LowerSlide">
         <LScreen1 />
       </div>
-      <div className="UpperSlide">
+      <div className="UpperSlide" ref={scrollRef}>
         <div className="Uscreen UScreen1">
           <UScreen1 colorIndex={primaryColor} />
         </div>
