@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import './UScreen2.css'
 
 interface Props {
