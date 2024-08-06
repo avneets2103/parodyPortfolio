@@ -12,16 +12,10 @@ import UScreen6 from "./Components/UpperLayer/Screen6/UScreen6";
 import useWindowDimensions from "./Components/windowDim/windowDim";
 import useScrollSnap from "react-use-scroll-snap";
 import { useState, useRef } from 'react';
-import useOnScreen from './Components/onScreenHook';
 import "./style.css";
 import { Analytics } from '@vercel/analytics/react';
 
 function App() {
-  const [ref, isVisible] = useOnScreen({
-    root: null, // relative to document viewport
-    rootMargin: '0px',
-    threshold: 0.1, // triggers when 10% of the div is visible
-  });
   const { width, height } = useWindowDimensions();
   const [primaryColor, setPrimaryColor] = useState<number>(0);
   const scrollRef = useRef(null);
@@ -39,7 +33,7 @@ function App() {
             <UScreen1 colorIndex={primaryColor}/>
           </div>
           <div className="Uscreen UScreen2">
-            <UScreen2 visible={isVisible} />
+            <UScreen2 />
           </div>
           <div className="Uscreen UScreen4" id="educationID">
             <LScreen2/>
@@ -69,8 +63,8 @@ function App() {
         <div className="Uscreen UScreen1">
           <UScreen1 colorIndex={primaryColor} />
         </div>
-        <div className="Uscreen UScreen2" ref={ref}>
-          <UScreen2 visible={isVisible} />
+        <div className="Uscreen UScreen2">
+          <UScreen2 />
         </div>
         <div className="Uscreen UScreen4" id="educationID">
           <LScreen2/>

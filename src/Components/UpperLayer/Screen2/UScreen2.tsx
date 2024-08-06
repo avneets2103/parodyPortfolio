@@ -1,10 +1,6 @@
 import './UScreen2.css'
 
-interface Props {
-  visible: boolean;
-}
-
-function UScreen2(props: Props) {
+function UScreen2() {
   return (
     <>
       <video autoPlay={true} id="interstellarVid" muted loop className="productVideoComp" controls={false} preload="auto">
