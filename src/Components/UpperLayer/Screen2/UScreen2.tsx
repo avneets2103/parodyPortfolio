@@ -5,7 +5,6 @@ interface Props {
 }
 
 function UScreen2(props: Props) {
-  const { visible } = props;
   return (
     <>
       <video autoPlay={true} id="interstellarVid" muted loop className="productVideoComp" controls={false} preload="auto">
