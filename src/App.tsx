@@ -24,7 +24,7 @@ function App() {
   if(width<height){
     return (
       <>
-      <div className="SlidesContainer" ref={scrollRef}>
+      <div className="SlidesContainer">
         <div className="LowerSlide">
           <LScreen1 />
         </div>
